@@ -1,13 +1,37 @@
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/muli-regular.woff2') format('woff2'),
+    url('../fonts/muli-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/muli-bold.woff2') format('woff2'),
+    url('../fonts/muli-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: #8f57fd;
+  font-family: 'Muli', sans-serif;
 }
 
 a {
   color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .header {
@@ -24,12 +48,13 @@ a {
 .header__profile {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .profile__image {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   margin-right: 8px;
   filter: invert(1);
 }
@@ -44,14 +69,10 @@ a {
   padding: 0;
   text-align: right;
   position: absolute;
-  top: 24px;
+  top: 30px;
   right: 0;
 }
 
 .menu__item {
-  padding: 4px;
-}
-
-.menu__link {
-  text-decoration: none;
+  padding: 6px;
 }
