@@ -16,13 +16,20 @@
   font-display: swap;
 }
 
+* {
+  font-family: 'Muli', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: #8f57fd;
-  font-family: 'Muli', sans-serif;
 }
 
 a {
@@ -75,4 +82,27 @@ a:hover {
 
 .menu__item {
   padding: 6px;
+}
+
+.main {
+  text-align: center;
+  margin-top: 8em;
+}
+
+.main__subtitle {
+  font-size: 25px;
+}
+
+.search-box {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  color: white;
+  font-size: 1em;
+  width: 70%;
+}
+
+.search-box::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
