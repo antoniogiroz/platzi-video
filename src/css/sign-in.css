@@ -123,6 +123,7 @@ a:hover {
 .login__social {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .login__social-link {
@@ -155,4 +156,22 @@ a:hover {
 
 .footer__link {
   padding-left: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__link {
+    padding: 0;
+  }
 }

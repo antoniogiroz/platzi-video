@@ -164,13 +164,34 @@ a:hover {
   font-size: 10px;
   padding: 10px;
   transition: 450ms opacity;
-  opacity: 0;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .carousel__details:hover {
   opacity: 1;
 }
 
+.carousel__title,
+.carousel__subtitle {
+  margin: 0;
+}
+
 .carousel__action {
-  width: 32px;
+  width: 24px;
+}
+
+.carousel__title {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.carousel__subtitle {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 600px) {
 }
