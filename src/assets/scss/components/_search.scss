@@ -1,0 +1,22 @@
+.search {
+  text-align: center;
+  margin-top: 8em;
+}
+
+.search__subtitle {
+  font-size: 25px;
+}
+
+.search-box {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  color: white;
+  font-size: 1em;
+  width: 70%;
+}
+
+.search-box::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}

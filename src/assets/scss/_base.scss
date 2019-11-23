@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display-swap);
+
+* {
+  font-family: 'Muli', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #8f57fd;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+}

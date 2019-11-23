@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile__image {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  filter: invert(1);
+}
+
+.header__profile:hover .profile__menu {
+  display: block;
+}
+
+.profile__menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.menu__item {
+  padding: 6px;
+}
