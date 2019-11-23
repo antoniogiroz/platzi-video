@@ -1,0 +1,11 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .title {
+    font-size: 3rem;
+    transform: translateY(-200px);
+  }
+}

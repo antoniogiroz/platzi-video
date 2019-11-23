@@ -1,42 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import '../assets/scss/main.scss';
-import useApi from '../hooks/useApi';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Search from '../components/Search';
-import Carousel from '../components/Carousel';
-import CarouselItem from '../components/CarouselItem';
+import Layout from './Layout';
+import Home from './Home';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import NotFound from './NotFound';
 
-const App = () => {
-  const videos = useApi('http://localhost:3000/api');
-
-  return (
-    <div className='app'>
-      <Header />
-      <Search />
-
-      {videos.mylist && videos.mylist.length > 0 && (
-        <Carousel title='My list'>
-          {videos.mylist &&
-            videos.mylist.map((item) => <CarouselItem key={item.id} {...item} />)}
-        </Carousel>
-      )}
-
-      <Carousel title='Trends'>
-        {videos.trends &&
-          videos.trends.map((item) => <CarouselItem key={item.id} {...item} />)}
-      </Carousel>
-
-      <Carousel title='Originals'>
-        {videos.originals &&
-          videos.originals.map((item) => (
-            <CarouselItem key={item.id} {...item} />
-          ))}
-      </Carousel>
-
-      <Footer />
-    </div>
-  );
-};
+const App = () => (
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/sign-in' component={SignIn} />
+        <Route exact path='/sign-up' component={SignUp} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  </BrowserRouter>
+);
 
 export default App;

@@ -7,3 +7,14 @@
 .footer__link {
   padding-left: 24px;
 }
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__link {
+    padding: 0;
+  }
+}
